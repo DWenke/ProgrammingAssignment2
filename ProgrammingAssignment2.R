@@ -33,7 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
   
     matinv <- x$getmatinv()
-      if(!is.null(matinv)) {
+      if(!isnull(matinv)) {
         message("Getting cached data")
         return(matinv)
       }
